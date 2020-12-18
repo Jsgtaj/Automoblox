@@ -1,0 +1,153 @@
+/*    Fonts begin   */
+/* lato-regular, 900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v17-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/lato-v17-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-v17-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/lato-v17-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*    Fonts end   */
+/* Setting root font  */
+body {
+  background: linear-gradient(to left, #efefef, #fff, #fff, #fff, #fff, #efefef);
+}
+html > body > .container {
+  font-size: 14px;
+  font-family: "Lato", "Franklin Gothic Medium", Arial, sans-serif !important;
+}
+/* Size increase on hover */
+.custom-hover-grow {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.custom-hover-grow:hover {
+  transform: scale(1.04);
+}
+/*    Nav begin    */
+/* Custom nav background */
+.custom-navbar-automoblox {
+  background: linear-gradient(to left, #00000000, #ccc, #ccc, #00000000);
+  line-height: normal;
+  right: 0;
+  left: 0;
+  padding: 0;
+}
+/* Nav hamburger button */
+.custom-toggler,
+.custom-toggler:link,
+.custom-toggler:visited,
+.custom-toggler:focus,
+.custom-toggler:hover .custom-toggler:active {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+/* Nav buttons */
+.custom-nav-item {
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: color 0.25s ease;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+.custom-nav-item:hover {
+  cursor: pointer;
+}
+/* Nav spacers */
+.custom-nav-spacer {
+  width: 2px;
+  height: auto;
+  background: linear-gradient(to bottom, #00000000, #000000a0, #000000a0, #00000000);
+}
+/*    Nav hover colours begin   */
+.custom-a9-active,
+.custom-a9:hover {
+  background-color: #feb849;
+}
+.custom-c9-active,
+.custom-c9:hover {
+  background-color: #ff5f5f;
+}
+.custom-m9-active,
+.custom-m9:hover {
+  background-color: #45d2fd;
+}
+.custom-t9-active,
+.custom-t9:hover {
+  background-color: #49e544;
+}
+.custom-x9-active,
+.custom-x9:hover {
+  background-color: #bb55ff;
+}
+/*    Nav hover colours end   */
+/*    Nav end    */
+
+/*    Main begin    */
+/*    Carousel begin   */
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+.custom-a9-bg,
+.custom-c9-bg,
+.custom-m9-bg,
+.custom-t9-bg,
+.custom-x9-bg {
+  border-radius: 100px;
+  color: #000000d0 !important;
+}
+.custom-a9-bg {
+  background: linear-gradient(to left, #00000000, #feb849, #feb849);
+}
+.custom-c9-bg {
+  background: linear-gradient(to left, #00000000, #ff5f5f, #ff5f5f);
+}
+.custom-m9-bg {
+  background: linear-gradient(to left, #00000000, #45d2fd, #45d2fd);
+}
+.custom-t9-bg {
+  background: linear-gradient(to left, #00000000, #49e544, #49e544);
+}
+.custom-x9-bg {
+  background: linear-gradient(to left, #00000000, #bb55ff, #bb55ff);
+}
+/*    Carousel end   */
+/*    Carousel caption for small screens begin    */
+@media only screen and (max-width: 768px) {
+  .custom-a9-bg,
+  .custom-c9-bg,
+  .custom-m9-bg,
+  .custom-t9-bg,
+  .custom-x9-bg {
+    background: none;
+    text-align: center;
+  }
+  .custom-a9-bg {
+    background-color: #feb849;
+  }
+  .custom-c9-bg {
+    background-color: #ff5f5f;
+  }
+  .custom-m9-bg {
+    background-color: #45d2fd;
+  }
+  .custom-t9-bg {
+    background-color: #49e544;
+  }
+  .custom-x9-bg {
+    background-color: #bb55ff;
+  }
+}
+/*    Carousel caption for small screens end    */
+/*    Main end    */
